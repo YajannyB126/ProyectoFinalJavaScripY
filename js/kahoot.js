@@ -81,7 +81,7 @@ function mostrarPregunta() {
 }
 
 
-const audio = new Audio("/audio/audioKahoot.mp4");
+const audio = new Audio("/audio/audioKahootR.mp4");
 const play = document.querySelector(".loginbtn");
 
 const reproducir = ()=> {
