@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/img/logo-kahoot.png">
+    <link rel="stylesheet" href="/css/estilos.css">
+
+    <link rel="icon" type="image/jpg" href="/img/logo-kahoot.png"/>
+    
+    <title>Kahoot!</title>
+</head>
+<body>
+
+    <div class="contenedor-main">
+        <div class="container-login">
+            <div class="container">
+                <h3>Ingresa tu nombre</h3>
+            <input type="text" class="nombre">
+            <button class="loginbtn" onclick=" reproducir()"><strong>Iniciar</strong></button>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+    <div class="main-kahoot" style="display: none;">
+        <h2 class="pregunta"></h2>
+        <img class="imagen" src="/img/kahootprincipal.webp" alt="">
+
+        <div class="content-time">
+            <div class="time" ></div>
+          </div>
+
+        <div class="contenedor-btn">
+            
+                <div class="grid-item respuesta1" onclick="verificarRespuesta(1)"><p></p></div>
+                <div class="grid-item respuesta2" onclick="verificarRespuesta(2)"><p></p></div>
+                <div class="grid-item respuesta3" onclick="verificarRespuesta(3)"><p></p></div>
+                <div class="grid-item respuesta4" onclick="verificarRespuesta(4)"><p></p></div>
+            
+        </div>
+
+
+    </div>
+
+    <div class="contenedor-resultado" style="display: none;">
+        <div class="resultado"></div>
+    </div>
+
+    <script src="/js/kahoot.js"></script>
+
+
+</body>
+</html>
